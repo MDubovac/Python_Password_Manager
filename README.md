@@ -1,9 +1,15 @@
-# password_manager
-A simple password manager using Ceasar's Cipher for encyption, MySql for db, and Tkinter for Interface...
+# How to use this app
 
-If you wish to open the application in terminal, open with "main.py",
- or if you wish to open tehe application with GUI, open with "app.py".
+1. Setup the Database Connection:
+ - Please refer to db.py file in this reposotory for instructions
 
+2. There are two ways to run this app:
+ - If you wish to open the terminal version, Run main.py
+ - If you wish to open the GUI version, Run app.py
+ 
 
-WARNING !!!!
-Please check the db.py for the database setup info.
+# Description
+This is a simple "Passwor Manager application" that uses:
+ - MySql Database
+ - Ceasar's Cipher for password encryption
+ - Tkinter for Graphical User Interface
