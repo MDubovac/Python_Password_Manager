@@ -1,13 +1,16 @@
 from crud import create, read, update, delete
 from db import my_cursor
 
+# Master username and password
 check_username = input("Enter username: ")
 check_password = input("Enter the master password: ")
 
+# Check if user exists
 sql = f"SELECT * FROM master_user WHERE username='{check_username}' AND password='{check_password}'"
 my_cursor.execute(sql)
 result = my_cursor.fetchall()
 
+# If user Exists, Print Welcome message and star the app
 if len(result) > 0:
     print("____________________________")
     print("----------- Menu -----------")   
@@ -17,6 +20,13 @@ if len(result) > 0:
     print("4.Delete a password.")    
     print("5.Quit.\n") 
 
+    # User enters wanted action
+    # 1 - To Create a new Password
+    # 2 - To Read selected Password
+    # 3 - To Update selected Password
+    # 4 - To Delete selected Password
+    # 5 - To Exit The Application
+    
     choice = input("Enter the number of the operation you would like to perform: ")   
 
     if choice == "1":
