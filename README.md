@@ -9,7 +9,7 @@
  
 
 # Description
-This is a simple "Passwor Manager application" that uses:
+This is a simple "Password Manager application" that uses:
  - MySql Database
  - Ceasar's Cipher for password encryption
  - Tkinter for Graphical User Interface
